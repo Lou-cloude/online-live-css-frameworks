@@ -15,6 +15,32 @@
     - logóval
     - 3 menüponttal
     - sötét háttérrel -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
 
     <!-- Csak egy szürke doboz -->
     <div class="p-3 m-5 bg-light">
@@ -25,15 +51,76 @@
         - egy "danger" gombot
         - egy sárga körvonalú gombot
         - egy NAGY zöld gombot -->
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-success btn-lg">Large button</button>
     </div>
 
     <!-- 3. Rakj ide 3 oszlopot
       - legyen bennük 1-1 kártya
       - ez legyen a kép a kártyán: http://placekitten.com/600/300 -->
 
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <img src="http://placekitten.com/600/300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="https://www.bookdesignmadesimple.com/wp-content/uploads/2015/08/iStock_3357562_600x300.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9f1zjb4Dm-e2NW_jfL9I621Fh4PdnobdkQA&usqp=CAU" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     <!-- 4. Rakj ide egy bejelentkezős formot
       - legyen ez egy 2 oszlopos elrendezés jobb oldalán 
       - legyen a bal oldalon egy nagy display szöveggel egy barátságos üzenet -->
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <h1 class="display-6">Display 6</h1>
+    
 
     <!-- 5. Rakj ide egy láblécet "made with 💖 by {neved}" tartalommal
       - legyen sötét háttéren világos betűvel
@@ -42,6 +129,18 @@
     <!-- 6. Adj hozzá informatív tooltipeket a barátságos üzenetedhez -->
 
     <!-- 7. Essen a hó -->
+
+    <div class="fixed-top" id="particles-js"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particlesjs@2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
 
   </body>
 </html>
